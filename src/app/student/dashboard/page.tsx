@@ -231,7 +231,7 @@ export default function StudentDashboard() {
 
         {/* Stats Overview */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card className=" backdrop-blur-sm border-blue-200">
+          <Card className=" backdrop-blur-sm border-2 border-blue-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Enrolled Courses
@@ -246,7 +246,7 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-purple-200">
+          <Card className=" backdrop-blur-sm border-2 border-purple-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Current GPA</CardTitle>
               <TrendingUp className="h-4 w-4 text-purple-600" />
@@ -259,7 +259,7 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-orange-200">
+          <Card className=" backdrop-blur-sm border-2 border-orange-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Card Balance
@@ -278,7 +278,7 @@ export default function StudentDashboard() {
         {/* Alerts */}
         {((data?.stats?.overdueBooks ?? 0) > 0 ||
           (data?.stats?.pendingFines ?? 0) > 0) && (
-          <Card className="border-red-200 bg-red-50">
+          <Card className="border-2 border-red-200 bg-red-50">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2 text-red-800">
                 <AlertTriangle className="h-5 w-5" />
@@ -305,7 +305,7 @@ export default function StudentDashboard() {
         {/* Main Navigation Cards */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <Link href="/student/grades" className="block group">
-            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-pink-200 group-hover:border-pink-300">
+            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-2 border-pink-200 group-hover:border-pink-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <Award className="h-8 w-8 text-pink-600" />
@@ -336,7 +336,7 @@ export default function StudentDashboard() {
           </Link>
 
           <Link href="/student/gpa-tracking" className="block group">
-            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-blue-200 group-hover:border-blue-300">
+            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-2 border-blue-200 group-hover:border-blue-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <ChartLine className="h-8 w-8 text-blue-600" />
@@ -365,7 +365,7 @@ export default function StudentDashboard() {
           </Link>
 
           <Link href="/student/attendance" className="block group">
-            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-green-200 group-hover:border-green-300">
+            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-2 border-green-200 group-hover:border-green-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <CalendarClock className="h-8 w-8 text-green-600" />
@@ -396,7 +396,7 @@ export default function StudentDashboard() {
           </Link>
 
           <Link href="/student/transactions" className="block group">
-            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-orange-200 group-hover:border-orange-300">
+            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-2 border-orange-200 group-hover:border-orange-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <CreditCard className="h-8 w-8 text-orange-600" />
@@ -444,7 +444,7 @@ export default function StudentDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Library Status */}
           <Link href="/student/library" className="block group">
-            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-purple-200 group-hover:border-purple-300">
+            <Card className="h-full transition-all hover:shadow-lg hover:scale-105 backdrop-blur-sm border-2 border-purple-200 group-hover:border-purple-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <BookOpen className="h-8 w-8 text-purple-600" />
@@ -532,7 +532,7 @@ export default function StudentDashboard() {
 
           {/* Courses (tabbed by year + semester) */}
           {data?.courses && data.courses.length > 0 && (
-            <Card className="h-full transition-all hover:shadow-lg  border-purple-200 group-hover:border-purple-300">
+            <Card className="h-full transition-all hover:shadow-lg border-2 border-purple-200 group-hover:border-purple-300">
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <BookOpen className="h-8 w-8 text-purple-600" />

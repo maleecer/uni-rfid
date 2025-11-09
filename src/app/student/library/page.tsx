@@ -175,7 +175,7 @@ export default function StudentLibrary() {
 
         {/* Alert for overdue books */}
         {overdueLoans.length > 0 && (
-          <Card className="border-red-200 bg-red-50">
+          <Card className="border-2 border-red-200 bg-red-50">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2 text-red-800">
                 <AlertTriangle className="h-5 w-5" />
@@ -193,7 +193,7 @@ export default function StudentLibrary() {
 
         {/* Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className=" backdrop-blur-sm border-blue-200">
+          <Card className=" backdrop-blur-sm border-2 border-blue-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Active Loans
@@ -208,7 +208,7 @@ export default function StudentLibrary() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-red-200">
+          <Card className=" backdrop-blur-sm border-2 border-red-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Overdue Books
@@ -223,7 +223,7 @@ export default function StudentLibrary() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-green-200">
+          <Card className=" backdrop-blur-sm border-2 border-green-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Books Returned
@@ -240,7 +240,7 @@ export default function StudentLibrary() {
         </div>
 
         {/* Current Loans */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <Book className="h-5 w-5" />
@@ -318,7 +318,7 @@ export default function StudentLibrary() {
         </Card>
 
         {/* Loan History */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <Calendar className="h-5 w-5" />

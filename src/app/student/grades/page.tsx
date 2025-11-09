@@ -140,7 +140,7 @@ export default function StudentGrades() {
 
         {/* GPA Overview */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className=" backdrop-blur-sm border-blue-200">
+          <Card className=" backdrop-blur-sm border-2 border-blue-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Current GPA</CardTitle>
               <TrendingUp className="h-4 w-4 text-blue-600" />
@@ -155,7 +155,7 @@ export default function StudentGrades() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-purple-200">
+          <Card className=" backdrop-blur-sm border-2 border-purple-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Courses Completed
@@ -170,7 +170,7 @@ export default function StudentGrades() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-green-200">
+          <Card className=" backdrop-blur-sm border-2 border-green-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Total Credits
@@ -187,7 +187,7 @@ export default function StudentGrades() {
         </div>
 
         {/* Year Filter */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="text-lg">Filter by Year</CardTitle>
           </CardHeader>
@@ -215,7 +215,7 @@ export default function StudentGrades() {
         </Card>
 
         {/* Grades Table */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
               <span>
@@ -301,7 +301,7 @@ export default function StudentGrades() {
 
         {/* Grade Distribution (if grades available) */}
         {grades.length > 0 && (
-          <Card className=" backdrop-blur-sm">
+          <Card className=" backdrop-blur-sm border-2">
             <CardHeader>
               <CardTitle>Grade Distribution</CardTitle>
               <CardDescription>

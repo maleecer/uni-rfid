@@ -139,7 +139,7 @@ export default function AttendanceTracking() {
         </div>
 
         {/* Filters */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="text-lg">Filter Options</CardTitle>
           </CardHeader>
@@ -188,7 +188,7 @@ export default function AttendanceTracking() {
 
         {/* Attendance Summary */}
         {summary.length > 0 && (
-          <Card className=" backdrop-blur-sm">
+          <Card className=" backdrop-blur-sm border-2">
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
                 <CalendarClock className="h-5 w-5" />
@@ -271,7 +271,7 @@ export default function AttendanceTracking() {
         )}
 
         {/* Detailed Attendance Records */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle>Attendance Records</CardTitle>
             <CardDescription>

@@ -166,7 +166,7 @@ export default function StudentTransactions() {
 
         {/* Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className=" backdrop-blur-sm border-blue-200">
+          <Card className=" backdrop-blur-sm border-2 border-blue-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">
                 Total Transactions
@@ -183,7 +183,7 @@ export default function StudentTransactions() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-green-200">
+          <Card className=" backdrop-blur-sm border-2 border-green-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Total Spent</CardTitle>
               <TrendingUp className="h-4 w-4 text-green-600" />
@@ -198,7 +198,7 @@ export default function StudentTransactions() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-purple-200">
+          <Card className=" backdrop-blur-sm border-2 border-purple-200">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">This Month</CardTitle>
               <Calendar className="h-4 w-4 text-purple-600" />
@@ -224,7 +224,7 @@ export default function StudentTransactions() {
         </div>
 
         {/* Transactions Table */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <CreditCard className="h-5 w-5" />

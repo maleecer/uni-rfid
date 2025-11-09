@@ -228,7 +228,7 @@ export default function GPATracking() {
 
         {/* GPA Overview Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Card className=" backdrop-blur-sm border-blue-200">
+          <Card className=" backdrop-blur-sm border-2 border-blue-200">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-lg font-medium">Current GPA</CardTitle>
               <Award className="h-6 w-6 text-blue-600" />
@@ -243,7 +243,7 @@ export default function GPATracking() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-green-200">
+          <Card className=" backdrop-blur-sm border-2 border-green-200">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-lg font-medium">
                 Simulated GPA
@@ -260,7 +260,7 @@ export default function GPATracking() {
             </CardContent>
           </Card>
 
-          <Card className=" backdrop-blur-sm border-purple-200">
+          <Card className=" backdrop-blur-sm border-2 border-purple-200">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-lg font-medium">
                 Projected GPA
@@ -280,7 +280,7 @@ export default function GPATracking() {
 
         {/* Real Grades Summary */}
         {realGrades.length > 0 && (
-          <Card className=" backdrop-blur-sm">
+          <Card className=" backdrop-blur-sm border-2">
             <CardHeader>
               <CardTitle>Your Actual Grades</CardTitle>
               <CardDescription>
@@ -330,7 +330,7 @@ export default function GPATracking() {
         )}
 
         {/* GPA Calculator */}
-        <Card className=" backdrop-blur-sm">
+        <Card className=" backdrop-blur-sm border-2">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
               <Calculator className="h-5 w-5" />
@@ -491,7 +491,7 @@ export default function GPATracking() {
 
         {/* Year-wise GPA Breakdown */}
         {simulatedCourses.length > 0 && (
-          <Card className="bg-white/80 backdrop-blur-sm">
+          <Card className="bg-white/80 backdrop-blur-sm border-2">
             <CardHeader>
               <CardTitle>Year-wise GPA Breakdown</CardTitle>
               <CardDescription>
